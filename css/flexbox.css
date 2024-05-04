@@ -1,0 +1,48 @@
+/* Cabeçalho */
+
+.cabecalho__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+}
+
+.cabecalho__pesquisar__item {
+    display: none;
+}
+
+.superior__secao__container {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: scroll;
+    gap: 1rem;
+}
+
+
+/* Rodapé */
+
+.rodape__container {
+    display: flex;
+    /* flex-direction: column;
+    flex-wrap: wrap; */
+    flex-flow: column wrap;
+}
+
+/* Tela de tablet */
+
+@media (min-width: 834px) {
+
+    /* Cabeçalho */
+
+    .cabecalho__pesquisar__item {
+        display: block;
+    }
+
+    /* Rodapé */
+
+    .rodape__container {
+        justify-content: space-between;
+    }
+}
