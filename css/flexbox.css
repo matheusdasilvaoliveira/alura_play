@@ -20,6 +20,36 @@
     gap: 1rem;
 }
 
+/* Menu */
+
+.menu__container {
+    position: fixed;
+    bottom: 0;
+    height: 74px;
+    width: 100%;
+}
+
+.menu__lista {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.menu__lista li {
+    align-self: center;
+}
+
+.menu__lista:nth-child(2),
+.menu__lista:nth-child(3),
+.menu__lista:nth-child(4) {
+    display: none;
+}
+
+.menu__itens {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 
 /* Rodapé */
 
@@ -40,9 +70,49 @@
         display: block;
     }
 
+    /* Menu */
+    
+    /* Menu tablet */
+
+    .menu__container {
+        left: 0;
+        top: 80px;
+        height: auto;
+        width: 74px;
+    }
+
+    .menu__lista {
+        flex-direction: column;
+        justify-content: start;
+        gap: 33px;
+        padding-top: 15px;
+    }
+
     /* Rodapé */
 
     .rodape__container {
         justify-content: space-between;
+    }
+}
+
+/* Desktop */
+
+@media(min-width: 1440px) {
+
+    /* Menu desktop */
+
+    .menu__container {
+        width: 239px;
+        overflow: scroll;
+    }
+    
+    .menu__lista {
+        height: auto;
+    }
+
+    .menu__lista:nth-child(2),
+    .menu__lista:nth-child(3),
+    .menu__lista:nth-child(4) {
+        display: flex;
     }
 }
