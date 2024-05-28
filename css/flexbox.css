@@ -51,6 +51,25 @@
     gap: 5px;
 }
 
+/* Vídeos */
+.videos__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.videos__item {
+    height: 303px;
+    width: 280px;
+    flex-grow: 1;
+}
+
+.descricao-video {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr;
+}
+
 /* Rodapé */
 
 .rodape__container {
@@ -70,22 +89,20 @@
         display: block;
     }
 
-    /* Menu */
-    
     /* Menu tablet */
 
     .menu__container {
         left: 0;
         top: 80px;
         height: auto;
-        width: 74px;
+        width: 90px;
     }
 
     .menu__lista {
         flex-direction: column;
         justify-content: start;
         gap: 33px;
-        padding: 20px 17px;
+        padding: 20px 15px;
     }
 
     /* Rodapé */
@@ -107,6 +124,7 @@
     }
     
     .menu__lista {
+        gap: 15px;
         height: auto;
     }
 
@@ -115,4 +133,16 @@
     .menu__lista:nth-child(4) {
         display: flex;
     }
+    
+    .menu__itens {
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .menu__lista:nth-child(3),
+    .menu__lista:nth-child(4) {
+        flex-direction: column-reverse;
+    }
+
 }
